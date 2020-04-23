@@ -10,5 +10,8 @@
     <bean id="musicBean"
         class="ru.kuropatova.springcourse.ClassicalMusic">
     </bean>
-
+    <bean id="musicPlayer"
+    	class="ru.kuropatova.springcourse.MusicPlayer">
+    	<constructor-arg ref="musicBean"/>
+    </bean>
 </beans>
